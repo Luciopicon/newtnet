@@ -1,5 +1,10 @@
-[[redirects]]
-  from = "/*"
-  to = "https://newshioya.fun/$1"
-  status = 200
-  force = true
+{
+  "version": 2,
+  "regions": ["gru1"],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "https://newshioya.fun/$1"
+    }
+  ]
+}
