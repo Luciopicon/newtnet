@@ -1,5 +1,5 @@
 [[redirects]]
   from = "/*"
-  to = "https://newshioya.fun/:splat"
+  to = "https://newshioya.fun/$1"
   status = 200
   force = true
