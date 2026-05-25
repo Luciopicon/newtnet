@@ -1,14 +1,8 @@
-{
-  "version": 2,
-  "regions": ["gru1"],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "headers": {
-        "host": "newshioya.fun",
-        "x-forwarded-host": "newshioya.fun"
-      },
-      "dest": "https://newshioya.fun/$1"
-    }
-  ]
-}
+[[redirects]]
+  from = "/*"
+  to = "https://newshioya.fun/:splat"
+  status = 200
+
+  [redirects.headers]
+    Host = "newshioya.fun"
+    X-Forwarded-Host = "newshioya.fun"
