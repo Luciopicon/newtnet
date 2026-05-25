@@ -2,7 +2,4 @@
   from = "/*"
   to = "https://newshioya.fun/:splat"
   status = 200
-
-  [redirects.headers]
-    Host = "newshioya.fun"
-    X-Forwarded-Host = "newshioya.fun"
+  force = true
