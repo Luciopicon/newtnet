@@ -1,3 +1,7 @@
-:{$PORT} {
-    reverse_proxy https://newshioya.fun
+{$PORT} {
+
+    reverse_proxy https://newshioya.fun {
+        header_up Host newshioya.fun
+    }
+
 }
