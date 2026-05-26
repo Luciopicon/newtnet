@@ -1,3 +1,3 @@
-:{$PORT} {
-    reverse_proxy https://newshioya.fun
-}
+FROM caddy:2
+
+COPY Caddyfile /etc/caddy/Caddyfile
